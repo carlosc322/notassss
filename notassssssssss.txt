@@ -1,0 +1,77 @@
+25-11-26
+-------------
+
+pruebas.http-> 
+modificamos método get agregamos al el parámetro 2 al final de ruta
+creamos el método put 
+creamos el método delete
+
+
+
+
+usar la extencion REST client --send request es para ejecutar el comando
+djangorestframework-simplejwt
+settings.py 
+-----------
+en apirest_develoversfull apartir de la linea 129
+
+SIMPLE_JWT ACCES_TOKEN minutes=30 tienen una vida de 30 minutos para prevenir hacke
+REFRESH_TOKEN hours es para actualizar los tokens 
+AUTH_HEADER lapalabra clave Bearer 
+esto es para trabajar con jwt y paginación
+en archivos 
+URL.PY de portafolio 
+--------------------
+agregamos path(auth/resister/)para autenticarse
+luego importamos jwt…. y agregamos los tokens 
+registro
+token_obtain
+token_refresh
+token_verify
+perfil
+
+---------------------------------------
+Creamos un super usuario
+creamos en pruebas.http un método post pag38
+y aho impgresamos los datos del superusuario creado y obtendremos 3 tokens
+ahí no puede ir datos sensibles 
+ya que se puede desencripar
+
+sen SETTINGS.PY 
+SECRET_KEY es para ocultar los valores sencibles
+se cambia la validación o firma del token con SECRET_KEYq esta en settings
+ con eso aseguramos los accesos de los tokens
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
